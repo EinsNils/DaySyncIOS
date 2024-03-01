@@ -9,21 +9,14 @@ import SwiftUI
 
 struct RootView: View {
     @State private var tabSelection = 1
-    @State private var isSheetPresented = false
     
     var body: some View {
         TabView(selection: $tabSelection) {
-                HomeView()
-                    .tag(1)
+            HomeView()
+                .tag(1)
             
             Text("Hallos")
                 .tag(2)
-                .onTapGesture {
-                    isSheetPresented.toggle()
-                }
-                .sheet(isPresented: $isSheetPresented, content: {
-
-                })
             
             Text("Sheet")
                 .tag(3)
