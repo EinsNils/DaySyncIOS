@@ -18,13 +18,13 @@ struct RootView: View {
             Text("Hallos")
                 .tag(2)
             
-            Text("Sheet")
+            CreateView()
                 .tag(3)
             
             Text("Tab Content 3")
                 .tag(4)
             
-            Text("Tab Content 4")
+            SettingsView()
                 .tag(5)
             
         }

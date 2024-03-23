@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2953415E2BAF3BC00045AC64 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2953415D2BAF3BC00045AC64 /* SettingsView.swift */; };
+		296C1CBB2B9206E40007D045 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C1CBA2B9206E40007D045 /* CreateView.swift */; };
 		29743C522B90A2C2002DDD25 /* DaySyncIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29743C512B90A2C2002DDD25 /* DaySyncIOSApp.swift */; };
 		29743C542B90A2C2002DDD25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29743C532B90A2C2002DDD25 /* ContentView.swift */; };
 		29743C562B90A2C3002DDD25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29743C552B90A2C3002DDD25 /* Assets.xcassets */; };
@@ -15,12 +17,13 @@
 		29743C652B90A352002DDD25 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29743C642B90A352002DDD25 /* RootView.swift */; };
 		29743C682B90A370002DDD25 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29743C672B90A370002DDD25 /* CustomTabView.swift */; };
 		299670C52B91F66B008BEDB4 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299670C42B91F66B008BEDB4 /* TaskModel.swift */; };
-		299670C82B91F6E7008BEDB4 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299670C72B91F6E7008BEDB4 /* TaskViewModel.swift */; };
 		299670CB2B91F829008BEDB4 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299670CA2B91F829008BEDB4 /* CalendarView.swift */; };
 		299670CE2B91F8D3008BEDB4 /* DateConrtoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299670CD2B91F8D3008BEDB4 /* DateConrtoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2953415D2BAF3BC00045AC64 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		296C1CBA2B9206E40007D045 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		29743C4E2B90A2C2002DDD25 /* DaySyncIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaySyncIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29743C512B90A2C2002DDD25 /* DaySyncIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySyncIOSApp.swift; sourceTree = "<group>"; };
 		29743C532B90A2C2002DDD25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,7 +33,6 @@
 		29743C642B90A352002DDD25 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		29743C672B90A370002DDD25 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		299670C42B91F66B008BEDB4 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
-		299670C72B91F6E7008BEDB4 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		299670CA2B91F829008BEDB4 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		299670CD2B91F8D3008BEDB4 /* DateConrtoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConrtoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2953415C2BAF3B9C0045AC64 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2953415D2BAF3BC00045AC64 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		296C1CB92B9206CE0007D045 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				296C1CBA2B9206E40007D045 /* CreateView.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
 		29743C452B90A2C2002DDD25 = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +88,6 @@
 				29743C662B90A35E002DDD25 /* Components */,
 				299670CC2B91F8C4008BEDB4 /* Controller */,
 				299670C32B91F5D6008BEDB4 /* Model */,
-				299670C62B91F6D0008BEDB4 /* ViewModel */,
 				29743C532B90A2C2002DDD25 /* ContentView.swift */,
 				29743C552B90A2C3002DDD25 /* Assets.xcassets */,
 				29743C572B90A2C3002DDD25 /* Preview Content */,
@@ -99,7 +116,9 @@
 			children = (
 				29743C642B90A352002DDD25 /* RootView.swift */,
 				299670C92B91F815008BEDB4 /* Calendar */,
+				296C1CB92B9206CE0007D045 /* Create */,
 				29743C612B90A341002DDD25 /* Home */,
+				2953415C2BAF3B9C0045AC64 /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -126,14 +145,6 @@
 				299670C42B91F66B008BEDB4 /* TaskModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		299670C62B91F6D0008BEDB4 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				299670C72B91F6E7008BEDB4 /* TaskViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		299670C92B91F815008BEDB4 /* Calendar */ = {
@@ -223,10 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				299670C52B91F66B008BEDB4 /* TaskModel.swift in Sources */,
+				296C1CBB2B9206E40007D045 /* CreateView.swift in Sources */,
 				299670CE2B91F8D3008BEDB4 /* DateConrtoller.swift in Sources */,
-				299670C82B91F6E7008BEDB4 /* TaskViewModel.swift in Sources */,
 				299670CB2B91F829008BEDB4 /* CalendarView.swift in Sources */,
 				29743C652B90A352002DDD25 /* RootView.swift in Sources */,
+				2953415E2BAF3BC00045AC64 /* SettingsView.swift in Sources */,
 				29743C632B90A34A002DDD25 /* HomeView.swift in Sources */,
 				29743C682B90A370002DDD25 /* CustomTabView.swift in Sources */,
 				29743C542B90A2C2002DDD25 /* ContentView.swift in Sources */,
@@ -378,7 +390,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.nilszentgraf.DaySyncIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -409,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.nilszentgraf.DaySyncIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

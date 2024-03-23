@@ -9,26 +9,14 @@ import SwiftUI
 
 struct CalendarView: View{
     
-    @State private var selectedDate: Date = Date()
+    @State private var tasks: [TaskModel] = []
 
     var body: some View {
         VStack {
 
-            DatePicker("Select a date", selection: $selectedDate, displayedComponents: .date)
-                .datePickerStyle(GraphicalDatePickerStyle())
-                .padding()
-
-            // Hier kannst du deinen Kalender implementieren
-            Text("Calendar goes here...")
-                .padding()
         }
     }
 
-    private var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        return formatter
-    }
 }
 #Preview {
     CalendarView()
